@@ -201,6 +201,9 @@ $hss = $result['hss'];
 			</li>
 		</ul>
 	</div>
+	<header class="cd-intro">
+	<h3>Designed and Developed by <a href="https://www.saibhaskardevatha.co.in">Sai Bhaskar Devatha</a></h3> 
+	</header>
 	<?php mysqli_close($conn); ?>
 	<div class="cover-layer"></div>
 </div> <!-- .cd-schedule -->
