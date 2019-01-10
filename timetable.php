@@ -86,7 +86,7 @@ $hss = $result['hss'];
 
 				<ul>
 					<?php						
-						$sql = "SELECT * FROM monday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss'";
+						$sql = "SELECT * FROM monday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -111,7 +111,7 @@ $hss = $result['hss'];
 				<ul>
 				<?php
 
-						$sql = "SELECT * FROM tuesday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss'";
+						$sql = "SELECT * FROM tuesday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -135,7 +135,7 @@ $hss = $result['hss'];
 				<ul>
 				<?php
 
-						$sql = "SELECT * FROM wednesday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss'";
+						$sql = "SELECT * FROM wednesday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -159,7 +159,7 @@ $hss = $result['hss'];
 				<ul>
 				<?php
 
-						$sql = "SELECT * FROM thursday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss'";
+						$sql = "SELECT * FROM thursday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -182,7 +182,7 @@ $hss = $result['hss'];
 
 				<ul>
 				<?php
-						$sql = "SELECT * FROM friday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss'";
+						$sql = "SELECT * FROM friday where id = '$de1' OR id = '$de2' OR id = '$de3' OR id = '$oe' OR id = '$hss' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -201,11 +201,7 @@ $hss = $result['hss'];
 			</li>
 		</ul>
 	</div>
-	<header class="cd-intro">
-	<h3>Designed and Developed by <a href="https://www.saibhaskardevatha.co.in">Sai Bhaskar Devatha</a></h3> 
-	</header>
 	<?php mysqli_close($conn); ?>
-	<div class="cover-layer"></div>
 </div> <!-- .cd-schedule -->
 <script src="assets/js/modernizr.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>

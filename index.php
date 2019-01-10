@@ -35,8 +35,8 @@
                         <h4>If you want to edit or add your preferences, register below!</h4>
 					</header>
                     <form method="POST" action="helpers/register">
-                    <div class="row">
-                        <section class="6u 16u(medium)">
+                    <div class="row uniform">
+                        <div class="6u 12u(medium)">
                             <h3 class="align-center">Departmental Electives</h3>
                             <div class="select-wrapper">
                                 <select name="de-1" id="de-1" required>
@@ -99,8 +99,8 @@
                                 </select><br>
                             </div>
 
-                        </section>
-                        <section class="6u 6u(medium)">
+                        </div>
+                        <div class="6u 12u(medium)">
                             <h3 class="align-center">Open Elective</h3>
                             <div class="select-wrapper">
                                 <select name="oe" id="oe" required>
@@ -116,10 +116,10 @@
                                             }
                                         }
                                     ?>
-                                </select><br>
+                                </select>
                             </div>
-                        </section>
-                        <section class="6u 6u(medium)">
+                        </div>
+                        <div class="6u 12u(medium)">
                             <h3 class="align-center">HSS Course</h3>
                             <div class="select-wrapper">
                                 <select name="hss" id="hss" required>
@@ -139,7 +139,7 @@
                                     ?>
                                 </select>
                             </div>
-                        </section>
+                        </div>
                     </div>
                     
                     <div class="row uniform">
@@ -154,7 +154,7 @@
                     </div>
                 </form>
                 <header class="align-center">
-						<p>Designed and Developed by <a href="www.saibhaskardevatha.co.in">Sai Bhaskar Devatha</a></p>
+						<p>Designed and Developed by <a href="https://www.saibhaskardevatha.co.in">Sai Bhaskar Devatha</a></p>
 					</header>
 				</div>
 
